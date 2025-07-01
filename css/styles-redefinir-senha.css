@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #FFA500; 
+   --secondary-color: #FFD700; 
+   --background-color: #fffdf6;
+   --text-color: #333;
+   --card-bg: white;
+   --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .reset-password-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .password-checkBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .password-checkBox input {
+    margin-right: 0.5rem;
+  }
+
+  .password-checkBox label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: var(--button-hover-color);
+  }
+
+  .error-message {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: none;
+  }

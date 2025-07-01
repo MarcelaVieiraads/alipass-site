@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alipass para Empresas</title>
+  <link rel="stylesheet" href="css/styleempresa.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo-alipass.png" alt="Alipass Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quem-somos.html">Quem somos?</a></li>
+          <li><a href="empresas.html">Empresas</a></li>
+          <li><a href="restaurantes.html">Restaurantes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a href="#" class="btn">Baixar App</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Por que escolher o Alipass?</h2>
+    <p>Com taxas competitivas, aceitação ampla, suporte 24h e uma plataforma intuitiva, o Alipass é a escolha ideal para sua empresa.</p>
+  </section>
+
+  <section class="benefits">
+    <h2>Benefícios para sua Empresa</h2>
+    <ul>
+      <li>Redução de custos operacionais</li>
+      <li>Isenção de encargos conforme o PAT</li>
+      <li>Colaboradores mais satisfeitos e produtivos</li>
+    </ul>
+  </section>
+
+  <section class="how-it-works">
+    <h2>Como Funciona</h2>
+    <ol>
+      <li>Crie a conta da sua empresa</li>
+      <li>Cadastre os colaboradores</li>
+      <li>Distribua créditos mensais automaticamente</li>
+      <li>Colaboradores usam em restaurantes e apps</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Segurança e Conformidade</h2>
+    <p>Nosso sistema é 100% seguro, certificado e está em conformidade com a LGPD e normas fiscais.</p>
+  </section>
+
+  <section>
+    <h2>Cases de Sucesso</h2>
+    <p>"Reduzimos em 30% o tempo com a gestão de benefícios graças ao Alipass." </p>
+  </section>
+
+  <section>
+    <h2>Integrações e Tecnologia</h2>
+    <p>Compatível com ERPs e sistemas de RH. Integração simples e eficiente.</p>
+  </section>
+
+  <section class="contact-form">
+    <h2>Deixe seu Contato</h2>
+    <p>Preencha os dados abaixo e nossa equipe entrará em contato com você:</p>
+    <form id="formContato">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="email" id="email" placeholder="Seu email" required />
+      <textarea id="mensagem" rows="4" placeholder="Mensagem ou dúvida"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagemConfirmacao" style="display:none; color: green; font-weight: bold;">Mensagem enviada com sucesso!</p>
+  </section>
+
+  <footer>
+    &copy; 2023 Alipass. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    document.getElementById("formContato").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("mensagemConfirmacao").style.display = "block";
+      this.reset();
+    });
+  </script>
+</body>
+</html>

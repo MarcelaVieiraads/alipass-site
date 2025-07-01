@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato | Alipass</title>
+  <link rel="stylesheet" href="css/stylecontato.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo-alipass.png" alt="Alipass Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quem-somos.html">Quem Somos?</a></li>
+          <li><a href="empresas.html">Empresas</a></li>
+          <li><a href="restaurantes.html">Restaurantes</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a href="#" class="btn">Baixar App</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact-form">
+    <h2>Ainda está com dúvidas?</h2>
+    <p>Preencha os dados abaixo e nossa equipe entrará em contato com você!</p>
+   
+    <form id="formContato">
+      <input type="text" id="nome" placeholder="Seu Nome" required />
+      <input type="email" id="email" placeholder="Seu E-mail" required />
+      <textarea id="mensagem" rows="4" placeholder="Sua Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagemConfirmacao" style="display:none; color: green; font-weight: bold;">Mensagem enviada com sucesso!</p>
+  </section>
+
+  <footer>
+    &copy; 2023 Alipass. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    document.getElementById("formContato").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("mensagemConfirmacao").style.display = "block";
+      this.reset();
+    });
+  </script>
+      <!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5511985311465" target="_blank" class="whatsapp-float" aria-label="Chat WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
